@@ -33,22 +33,22 @@ class Test_unitarios():
         with pytest.raises(AttributeError):
             mi_caballero.preparado
 
-    # def test_herencia(self):
-    #     assert(issubclass(Soldado, Unidad))
-    #     assert(issubclass(Arquero, Unidad))
-    #     assert(issubclass(Caballero, Unidad))
-    #
-    # def test_abstract_class(self):
-    #     with pytest.raises(TypeError):
-    #         mi_unidad = Unidad()
-    #
-    # def test_ataque_arquero(self):
-    #     mi_arquero = Arquero()
-    #     assert(mi_arquero.atacar() == 0)
-    #     assert(mi_arquero.atacar() > 0)
-    #     assert(mi_arquero.atacar() == 0)
-    #     assert(mi_arquero.atacar() > 0)
-    #
+    def test_herencia(self):
+        assert(issubclass(Soldado, Unidad))
+        assert(issubclass(Arquero, Unidad))
+        assert(issubclass(Caballero, Unidad))
+
+    def test_abstract_class(self):
+        with pytest.raises(TypeError):
+            mi_unidad = Unidad()
+
+    def test_ataque_arquero(self):
+        mi_arquero = Arquero()
+        assert(mi_arquero.atacar() == 0)
+        assert(mi_arquero.atacar() > 0)
+        assert(mi_arquero.atacar() == 0)
+        assert(mi_arquero.atacar() > 0)
+
     # def test_ataque_soldado(self):
     #     mi_soldado = Soldado()
     #     assert(mi_soldado.atacar() > 0)
