@@ -27,8 +27,12 @@ class Unidad(ABC):
 
 class Soldado(Unidad):
     """Unidad soldado, tiene un coste de 5 monedas, tiene 3 puntos de ataque y restaura 5 puntos de vida al descansar"""
-    # def __init__(self):
-    #     super.__init__(self)
+    def __init__(self, coste = 5, puntos_ataque=3, restaura_descansar=5):
+        super().__init__(self)
+
+        self.coste=coste
+        self.restaura_descansar=restaura_descansar
+        self.__puntos_ataque=puntos_ataque
 
     def descansar(self):
         pass
@@ -65,8 +69,11 @@ class Arquero(Unidad):
 
 class Caballero(Unidad):
     """ Unidad Caballero, tiene un coste de 9 monedas, tiene 5 puntos de ataque, y al descansar no restaura puntos de vida"""
-    # def __init__(self):
-    #     super.__init__(self)
+    def __init__(self, coste = 9, puntos_ataque=5, restaura_descansar=0):
+        super().__init__(self)
+        self.coste=coste
+        self.restaura_descansar=restaura_descansar
+        self.__puntos_ataque=puntos_ataque
 
     def descansar(self):
         pass
