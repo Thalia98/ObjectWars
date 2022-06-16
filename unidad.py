@@ -28,6 +28,7 @@ class Unidad(ABC):
 class Soldado(Unidad):
     """Unidad soldado, tiene un coste de 5 monedas, tiene 3 puntos de ataque y restaura 5 puntos de vida al descansar"""
     def __init__(self, puntos_ataque=3, puntos_vida=10, coste = 5, restaura_descansar = 5):
+        super().__init__(self)
         self.__puntos_ataque = puntos_ataque
         self.__puntos_vida = puntos_vida
         self.__coste = coste
@@ -68,6 +69,7 @@ class Arquero(Unidad):
     """ Unidad Arquero, tiene un coste de 6 monedas, tiene 8 puntos de ataque y restaura 2 puntos de vida al decansar
     Los arqueros atacan 1 de cada 2 veces ya que deben recargar, empiezan la partida sin estar preparados para atacar"""
     def __init__(self, coste = 6, puntos_ataque=8, restaura_descansar=2, puntos_vida=10, puede_atacar=False):
+        super().__init__(self)
         self.__coste=coste
         self.__restaura_descansar=restaura_descansar
         self.__puede_atacar = puede_atacar
@@ -98,6 +100,7 @@ class Arquero(Unidad):
 class Caballero(Unidad):
     """ Unidad Caballero, tiene un coste de 9 monedas, tiene 5 puntos de ataque, y al descansar no restaura puntos de vida"""
     def __init__(self, coste = 9, puntos_ataque = 5, puntos_vida = 10, restaura_descansar = 0):
+        super().__init__(self)
         self.__coste=coste
         self.__restaura_descansar=restaura_descansar
         self.__puntos_ataque = puntos_ataque
