@@ -14,8 +14,8 @@ Existen tres tipologias de unidades: soldados, arqueros y caballeros. Las unidad
 soldado -> arquero -> caballero -> soldado
 
 
-    
-    
+
+
 Jugador: Jugador1
 Puntos de vida: 20
 Monedas: 10
@@ -32,9 +32,9 @@ Elige una opción:
     coste: 9 puntos_ataque: 5 puntos_vida: 10
 Jugador: Jugador1
 Puntos de vida: 20
-Monedas: 5
+Monedas: 1
 Unidades:
-1. Soldado
+1. Caballero
 
 Elige una opción:
 1) Terminar aplicación
@@ -45,12 +45,10 @@ Elige una opción:
     coste: 6 puntos_ataque: 8 puntos_vida: 10
 5) Comprar caballero:
     coste: 9 puntos_ataque: 5 puntos_vida: 10
-Jugador: Jugador1
+Jugador: jugador2
 Puntos de vida: 20
-Monedas: 0
+Monedas: 10
 Unidades:
-1. Soldado
-2. Soldado
 
 Elige una opción:
 1) Terminar aplicación
@@ -61,13 +59,11 @@ Elige una opción:
     coste: 6 puntos_ataque: 8 puntos_vida: 10
 5) Comprar caballero:
     coste: 9 puntos_ataque: 5 puntos_vida: 10
-No dispones de suficiente dinero
-Jugador: Jugador1
+Jugador: jugador2
 Puntos de vida: 20
-Monedas: 0
+Monedas: 1
 Unidades:
-1. Soldado
-2. Soldado
+1. Caballero
 
 Elige una opción:
 1) Terminar aplicación
